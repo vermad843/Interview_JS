@@ -14,13 +14,23 @@
 //   {[{}]} - spread operator
 
 
-   const a  =  {
-        test: [{
-        test: [{test: 287367823}]
-        }]
-    }
+//    const a  =  {
+//         test: [{
+//         test: [{test: 287367823}]
+//         }]
+//     }
 
-    const b = {...a}
-    console.log(b);
+//     const b = {...a}
+//     console.log(b);
+
+
+
+
+//  setInterval 
+
+    setInterval(() => {
+        console.log('hii')
+    }, 1000);
+
 
     
