@@ -40,26 +40,26 @@
 
 
 
-    const a =  [
-        {
-            id : 1,
-            name : 'p' 
-        }, 
-        {
-            id : 2,
-            name : 'S'
-        }
-    ];
+//     const a =  [
+//         {
+//             id : 1,
+//             name : 'p' 
+//         }, 
+//         {
+//             id : 2,
+//             name : 'S'
+//         }
+//     ];
 
 
 
- const b = a.reduce((byId, a) => {
-    byId[a.id] = a
-     return byId;
- }, {});   
+//  const b = a.reduce((byId, a) => {
+//     byId[a.id] = a
+//      return byId;
+//  }, {});   
 
 
- console.log(b);
+//  console.log(b);
  /*
    {1 :    {
             id : 1,
@@ -72,6 +72,25 @@
     }
  
  */
+
+
+
+
+// recursion - print 1 to 100 (without loop)
+
+
+{
+    function recurseMe(num) {
+      if(num > 100) {
+        return;
+      }
+      console.log(num);
+      document.write(num + ' ');
+      recurseMe(num+=1);
+    }
+
+    recurseMe(1);
+}
 
 
     
