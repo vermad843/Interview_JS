@@ -97,13 +97,42 @@
 
 //  largest number in an array and second largest no in an array
 
-const arr = [5,21,35,89,34,45];
+// const arr = [5,21,35,89,34,45];
 
-const sortingArr = arr.sort((a,b) => a - b);
-console.log(sortingArr);
-let largestNumber = sortingArr[sortingArr.length - 1]
-let secondLargestNumber = sortingArr[sortingArr.length - 2]
-console.log(largestNumber);//89
-console.log(secondLargestNumber);//45
+// const sortingArr = arr.sort((a,b) => a - b);
+// console.log(sortingArr);
+// let largestNumber = sortingArr[sortingArr.length - 1]
+// let secondLargestNumber = sortingArr[sortingArr.length - 2]
+// console.log(largestNumber);//89
+// console.log(secondLargestNumber);//45
+
+
+
+
+//  duplicate item in an array 
+
+
+const arr = ['M', 'T', 'M', 'W', 'Th','T'];
+
+const count = {}
+
+arr.forEach((element) => {
+    console.log(element);
+    count[element] = (count[element] || 0) + 1
+
+})
+
+console.log(count);//{M: 2, T: 2, W: 1, Th: 1}
+
+
+// reduce solution
+
+// const count = arr.reduce((acc,value) => {
+//     return  {...acc,[value] : (acc[value] || 0) + 1};     
+// }, {});
+
+
+// console.log(count);
+
 
     
