@@ -79,18 +79,31 @@
 // recursion - print 1 to 100 (without loop)
 
 
-{
-    function recurseMe(num) {
-      if(num > 100) {
-        return;
-      }
-      console.log(num);
-      document.write(num + ' ');
-      recurseMe(num+=1);
-    }
+// {
+//     function recurseMe(num) {
+//       if(num > 100) {
+//         return;
+//       }
+//       console.log(num);//1 to 100
+//     //   document.write(num + ' ');
+//       recurseMe(num+=1);
+//     }
 
-    recurseMe(1);
-}
+//     recurseMe(1);
+// }
 
+
+
+
+//  largest number in an array and second largest no in an array
+
+const arr = [5,21,35,89,34,45];
+
+const sortingArr = arr.sort((a,b) => a - b);
+console.log(sortingArr);
+let largestNumber = sortingArr[sortingArr.length - 1]
+let secondLargestNumber = sortingArr[sortingArr.length - 2]
+console.log(largestNumber);//89
+console.log(secondLargestNumber);//45
 
     
