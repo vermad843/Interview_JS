@@ -28,9 +28,36 @@
 
 //  setInterval 
 
-    setInterval(() => {
-        console.log('hii')
-    }, 1000);
+    // setInterval(() => {
+    //     console.log('hii')
+    // }, 1000);
 
 
+
+
+
+//  reduce :: 
+
+
+
+    const a =  [
+        {
+            id : 1,
+            name : 'p' 
+        }, 
+        {
+            id : 2,
+            name : 'S'
+        }
+    ];
+
+
+
+ const b = a.reduce((byId, a) => {
+    byId[a.id] = a
+     return byId;
+ }, {});   
+
+
+ console.log(b);
     
